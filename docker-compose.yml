@@ -1,0 +1,14 @@
+
+services:
+  api:
+    # Constrói a imagem a partir do Dockerfile no diretório atual (.)
+    build: .
+    container_name: imersao_devops_api
+    # Mapeia a porta 8000 do seu computador para a porta 8000 do contêiner
+    ports:
+      - "8000:8000"
+    # Mapeia o diretório atual para /app dentro do contêiner.
+    # Isso permite que o --reload funcione e que o banco de dados 'escola.db' seja salvo no seu computador.
+    volumes:
+      - .:/app
+
