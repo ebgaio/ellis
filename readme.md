@@ -51,6 +51,18 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 ---
 
+## Autenticando no Google Cloud
+
+```sh
+gcloud auth login
+gcloud config set project alura-imersao
+gcloud run deploy
+```
+
+---
+
+
+
 ## Estrutura do Projeto
 
 - `app.py`: Arquivo principal da aplicação FastAPI.
